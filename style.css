@@ -1,0 +1,123 @@
+:root {
+    --primary: #00c3ff;
+    --secondary: #4ecdc4;
+    --dark: #2d3436;
+    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    color: var(--dark);
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(135deg, #0095ff, #002fff);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+nav {
+    background: var(--dark);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav a:hover { color: var(--primary); }
+
+.search-container {
+    text-align: center;
+    max-width: 700px;
+    margin: -40px auto 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input, .modern-dropdown {
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+}
+
+input { flex: 2; min-width: 200px; }
+.modern-dropdown { flex: 1; cursor: pointer; }
+
+.recipe-grid, .fav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease; /* Transition requirement */
+    border-top: 5px solid var(--secondary);
+}
+
+.recipe-card:hover { /* Hover Highlight requirement */
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.instruction-text {
+    background: #f1f2f6;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin: 15px 0;
+    border-left: 4px solid var(--primary);
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+button:hover { opacity: 0.8; }
+
+.btn-fav { width: 100%; margin-top: 10px; background: var(--secondary); }
+.btn-remove { background: #dfe6e9; color: var(--dark); width: 100%; margin-top: 10px; }
+
+footer {
+    background: var(--dark);
+    color: #bdc3c7;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
