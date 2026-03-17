@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Explorer | Recipe Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍽 Khaleeq's Recipe Explorer</h1>
+    <p>Discover and save your next favorite meal</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#search-area">Recipes</a>
+    <a href="#favorites">Favorites</a>
+</nav>
+
+<section id="search-area">
+    <div class="search-container">
+        <h2>What's in your Mind?</h2>
+        <div class="input-group">
+            <input type="text" id="searchInput" placeholder="Search by ingredient (e.g., egg, chicken, cocoa)">
+            
+            <select id="categoryFilter" class="modern-dropdown">
+                <option value="All">All Categories</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dessert">Dessert</option>
+            </select>
+
+            <button id="searchBtn">Find Recipes</button>
+        </div>
+    </div>
+</section>
+
+<section id="recipes">
+    <h2>Available Recipes</h2>
+    <div id="results" class="recipe-grid">
+        </div>
+</section>
+
+<section id="favorites">
+    <h2>My Favorites </h2>
+    <div id="favoritesList" class="fav-grid">
+        <p class="empty-msg">Your favorites list is currently empty.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Khaleeq's Recipe Explorer  | Roll No: 2502131 | Contact: khaleeqwaqar01@gmail.com </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
